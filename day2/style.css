@@ -1,0 +1,166 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #1a252f;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+ul.features {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+ul.features li {
+  background-color: #ffffff;
+  border: 1rem solid #e0e0e0;
+  border-width: 1px;
+  border-radius: 6px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #ffffff;
+}
+
+th,
+td {
+  border: 1px solid #cccccc;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+form div {
+  margin-bottom: 1.25rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #27ae60;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #219150;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #e9ecef;
+  color: #6c757d;
+  margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  main {
+    margin: 1rem auto;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+}
